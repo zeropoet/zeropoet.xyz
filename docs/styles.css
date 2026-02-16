@@ -25,17 +25,17 @@ body {
 }
 
 .layout {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: var(--space-2);
+  position: relative;
   inline-size: fit-content;
   max-inline-size: 100%;
   margin-inline: auto;
 }
 
 .brand {
-  flex: 0 0 auto;
+  position: absolute;
+  inset-inline-end: calc(100% + var(--space-2));
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .logo {
@@ -46,17 +46,70 @@ body {
 }
 
 .site-links {
+  position: relative;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   gap: var(--space-1);
   max-inline-size: min(100%, 72ch);
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    display: grid;
+    justify-items: center;
+    gap: var(--space-2);
+  }
+
+  .brand {
+    position: static;
+    inset-inline-end: auto;
+    top: auto;
+    transform: none;
+  }
 }
 
 .site-links ul {
   margin: 0;
   padding: 0;
   list-style: none;
+  text-align: left;
+}
+
+.selector-bracket {
+  position: absolute;
+  inset-block-start: 0;
+  color: #c40000;
+  opacity: 1;
+  font-weight: 400;
+  line-height: 1;
+  pointer-events: none;
+  animation: bracket-track 26s linear infinite alternate;
+}
+
+.selector-bracket-left {
+  inset-inline-start: calc(-1 * var(--space-2));
+}
+
+.selector-bracket-right {
+  inset-inline-end: calc(-1 * var(--space-2));
+}
+
+@keyframes bracket-track {
+  0% {
+    inset-block-start: 0;
+  }
+
+  100% {
+    inset-block-start: calc(100% - 1lh);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .selector-bracket {
+    animation: none;
+  }
 }
 
 .site-links li {

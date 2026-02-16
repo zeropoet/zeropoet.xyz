@@ -7,13 +7,22 @@
       .heavy { stroke-width: 2.4; }
       .mid { stroke-width: 1.8; }
       .fine { stroke-width: 1.2; }
+      .core {
+        transform: scale(1);
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .core { transform: scale(1); }
+      }
     </style>
   </defs>
 
   <rect width="1200" height="1200" fill="#fff" />
 
   <!-- Core OVEL mark -->
-  <circle class="line heavy" cx="600" cy="600" r="220" />
-  <circle class="line mid" cx="600" cy="600" r="122" />
-  <circle class="line fine" cx="600" cy="600" r="52" stroke-opacity="0" />
+  <g class="core">
+    <circle class="line heavy" cx="600" cy="600" r="220" />
+    <circle class="line mid" cx="600" cy="600" r="122" />
+    <circle class="line fine" cx="600" cy="600" r="52" stroke-opacity="0" />
+  </g>
 </svg>
