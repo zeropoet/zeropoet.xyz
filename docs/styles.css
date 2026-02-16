@@ -113,7 +113,6 @@ body {
 }
 
 .site-links li {
-  --proximity: 0;
   padding-block: var(--space-1);
 }
 
@@ -124,16 +123,9 @@ body {
 a {
   display: inline-block;
   max-inline-size: 100%;
-  color: rgb(
-    calc(119 + 77 * var(--proximity))
-    calc(119 - 119 * var(--proximity))
-    calc(119 - 119 * var(--proximity))
-  );
+  color: var(--link);
   text-decoration: none;
   overflow-wrap: anywhere;
-  text-shadow: 0 0 calc(0.6rem * var(--proximity))
-    rgba(196, 0, 0, calc(0.45 * var(--proximity)));
-  transition: color 120ms linear, text-shadow 120ms linear;
 }
 
 a:hover,
