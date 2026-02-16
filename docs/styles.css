@@ -1,0 +1,54 @@
+:root {
+  --bg: #fff;
+  --text: #000;
+  --link: #777;
+  --space-1: clamp(0.3rem, 0.25rem + 0.2vw, 0.5rem);
+  --space-2: clamp(0.75rem, 0.5rem + 1vw, 1.5rem);
+  --space-3: clamp(1rem, 0.75rem + 2vw, 2.5rem);
+  --font-size: clamp(1rem, 0.95rem + 0.35vw, 1.2rem);
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  padding: max(env(safe-area-inset-top), var(--space-3))
+    max(env(safe-area-inset-right), var(--space-3))
+    max(env(safe-area-inset-bottom), var(--space-3))
+    max(env(safe-area-inset-left), var(--space-3));
+  background: var(--bg);
+  color: var(--text);
+  font-family: monospace;
+  font-size: var(--font-size);
+  line-height: 1.35;
+}
+
+.site-links {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  max-inline-size: min(100%, 70ch);
+  margin-inline: auto;
+}
+
+.site-links ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-links li {
+  padding-block: var(--space-1);
+}
+
+a {
+  display: inline-block;
+  max-inline-size: 100%;
+  color: var(--link);
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--text);
+}
