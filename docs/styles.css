@@ -36,6 +36,7 @@ body {
 }
 
 .page-title {
+  order: 3;
   margin: 0 0 0.1rem;
   inline-size: min(100%, 72ch);
   font-size: clamp(1.2rem, 1rem + 1vw, 2rem);
@@ -50,7 +51,8 @@ body {
 .brand {
   position: fixed;
   inset-inline-start: max(env(safe-area-inset-left), var(--space-2));
-  inset-block-start: max(env(safe-area-inset-top), var(--space-2));
+  top: 50%;
+  transform: translateY(-50%);
   z-index: 1;
 }
 
@@ -62,14 +64,16 @@ body {
 }
 
 .site-links {
-  order: 1;
+  order: 2;
   position: relative;
+  left: 75px;
+  top: -50px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: var(--space-1);
-  max-inline-size: min(100%, 72ch);
-  text-align: center;
+  inline-size: min(100%, 72ch);
+  text-align: left;
 }
 
 @media (max-width: 900px) {
@@ -97,6 +101,19 @@ body {
   padding: 0;
   list-style: none;
   text-align: left;
+}
+
+.site-note {
+  order: 4;
+  margin: 0.2rem 0 var(--space-2);
+  inline-size: min(100%, 72ch);
+  color: var(--link);
+  font-size: 0.8em;
+  line-height: 1.25;
+  text-align: left;
+  -webkit-user-select: none;
+  user-select: none;
+  pointer-events: none;
 }
 
 .selector-bracket {
