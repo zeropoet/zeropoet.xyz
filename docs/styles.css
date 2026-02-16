@@ -2,8 +2,6 @@
   --bg: #fff;
   --text: #000;
   --link: #777;
-  --panel: #ffffff;
-  --line: #d40000;
   --space-1: clamp(0.3rem, 0.25rem + 0.2vw, 0.5rem);
   --space-2: clamp(0.75rem, 0.5rem + 1vw, 1.5rem);
   --space-3: clamp(1rem, 0.75rem + 2vw, 2.5rem);
@@ -26,33 +24,32 @@ body {
   line-height: 1.35;
 }
 
-.brand {
+.layout {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
   gap: var(--space-2);
-  padding-bottom: var(--space-2);
-  margin-bottom: var(--space-2);
-  border-bottom: 1px solid var(--line);
+  inline-size: fit-content;
+  max-inline-size: 100%;
+  margin-inline: auto;
+}
+
+.brand {
+  flex: 0 0 auto;
 }
 
 .logo {
-  inline-size: clamp(44px, 8vw, 62px);
-  block-size: clamp(44px, 8vw, 62px);
+  inline-size: clamp(160px, 28vw, 320px);
+  block-size: clamp(160px, 28vw, 320px);
   display: block;
   object-fit: contain;
-}
-
-.brand-title {
-  margin: 0;
-  color: var(--text);
-  line-height: 1;
-  white-space: nowrap;
 }
 
 .site-links {
   display: flex;
   align-items: flex-start;
-  gap: var(--space-2);
+  justify-content: center;
+  gap: var(--space-1);
   max-inline-size: min(100%, 72ch);
 }
 
@@ -64,6 +61,10 @@ body {
 
 .site-links li {
   padding-block: var(--space-1);
+}
+
+.site-links li:first-child {
+  padding-top: 0;
 }
 
 a {
