@@ -125,6 +125,7 @@ a {
   color: var(--link);
   text-decoration: none;
   overflow-wrap: anywhere;
+  cursor: pointer;
 }
 
 a:hover,
