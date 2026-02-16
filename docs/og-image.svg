@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">ØVEL × Void Architecture</title>
+  <desc id="desc">Top layer index for Zeropoet projects.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f5f5" />
+      <stop offset="100%" stop-color="#e7e7e7" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect x="44" y="44" width="1112" height="542" rx="16" fill="#ffffff" stroke="#000000" stroke-width="2" />
+
+  <text x="96" y="202" fill="#000000" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="84" font-weight="700">
+    ØVEL
+  </text>
+  <text x="96" y="288" fill="#000000" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="56">
+    × Void Architecture
+  </text>
+  <text x="96" y="392" fill="#666666" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="34">
+    top layer index of linked worlds
+  </text>
+
+  <path d="M889 128h224M889 192h176M889 256h224" stroke="#000000" stroke-width="3" />
+  <circle cx="1034" cy="426" r="92" fill="none" stroke="#000000" stroke-width="3" />
+  <circle cx="1034" cy="426" r="52" fill="none" stroke="#000000" stroke-width="2" />
+</svg>
