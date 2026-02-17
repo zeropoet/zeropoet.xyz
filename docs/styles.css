@@ -12,11 +12,11 @@ body {
   margin: 0;
   min-height: 100dvh;
   display: grid;
-  place-items: center;
+  place-items: start;
   padding: max(env(safe-area-inset-top), var(--space-3))
-    max(env(safe-area-inset-right), var(--space-3))
-    max(env(safe-area-inset-bottom), var(--space-3))
-    max(env(safe-area-inset-left), var(--space-3));
+    max(env(safe-area-inset-right), var(--space-1))
+    max(env(safe-area-inset-bottom), var(--space-1))
+    max(env(safe-area-inset-left), var(--space-1));
   background: var(--bg);
   color: var(--text);
   font-family: monospace;
@@ -28,59 +28,81 @@ body {
   position: relative;
   z-index: 1;
   display: grid;
-  justify-items: center;
+  grid-template-columns: 1fr;
+  justify-items: start;
+  align-items: flex-start;
   gap: var(--space-1);
-  inline-size: fit-content;
-  max-inline-size: 100%;
-  margin-inline: auto;
+  inline-size: 100%;
+  block-size: auto;
+  margin: 0;
+  left: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.identity {
+  display: grid;
+  justify-items: start;
+  gap: 0.25rem;
+  inline-size: 100%;
 }
 
 .page-title {
-  order: 3;
-  margin: 0 0 0.1rem;
-  inline-size: min(100%, 72ch);
+  margin: 0;
+  margin-left: 0;
+  padding-left: 0;
+  inline-size: fit-content;
   font-size: clamp(1.2rem, 1rem + 1vw, 2rem);
   font-weight: 400;
   letter-spacing: 0.04em;
   text-align: left;
   color: var(--text);
-  position: relative;
-  z-index: 2;
 }
 
 .brand {
   position: fixed;
   inset-inline-start: max(env(safe-area-inset-left), var(--space-2));
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
+  inset-block-start: max(env(safe-area-inset-top), var(--space-2));
+  z-index: 0;
+  pointer-events: none;
 }
 
 .logo {
-  inline-size: clamp(160px, 28vw, 320px);
-  block-size: clamp(160px, 28vw, 320px);
+  inline-size: clamp(90px, 15.75vw, 180px);
+  block-size: clamp(90px, 15.75vw, 180px);
   display: block;
   object-fit: contain;
 }
 
 .site-links {
-  order: 2;
   position: relative;
-  left: 75px;
-  top: -50px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   gap: var(--space-1);
-  inline-size: min(100%, 72ch);
+  inline-size: 100%;
+  margin-left: 0;
+  padding-left: 0;
+  margin-top: var(--space-2);
   text-align: left;
 }
 
 @media (max-width: 900px) {
   .layout {
     display: grid;
-    justify-items: center;
+    grid-template-columns: 1fr;
+    justify-items: start;
     gap: var(--space-2);
+  }
+
+  .identity {
+    gap: var(--space-1);
+    inline-size: 100%;
+  }
+
+  .page-title,
+  .site-note {
+    inline-size: 100%;
   }
 
   .brand {
@@ -90,8 +112,8 @@ body {
   }
 
   .logo {
-    inline-size: clamp(96px, 22vw, 160px);
-    block-size: clamp(96px, 22vw, 160px);
+    inline-size: clamp(54px, 12.375vw, 90px);
+    block-size: clamp(54px, 12.375vw, 90px);
   }
 
 }
@@ -104,9 +126,11 @@ body {
 }
 
 .site-note {
-  order: 4;
-  margin: 0.2rem 0 var(--space-2);
-  inline-size: min(100%, 72ch);
+  margin: 0;
+  margin-left: 0;
+  padding-left: 0;
+  flex: 1 1 auto;
+  min-inline-size: 0;
   color: var(--link);
   font-size: 0.8em;
   line-height: 1.25;
@@ -116,42 +140,8 @@ body {
   pointer-events: none;
 }
 
-.selector-bracket {
-  position: absolute;
-  inset-block-start: 0;
-  color: rgba(0, 0, 0, 0.2);
-  font-weight: 400;
-  line-height: 1;
-  pointer-events: none;
-  animation: bracket-track 26s linear infinite alternate;
-}
-
-.selector-bracket-left {
-  inset-inline-start: calc(-1 * var(--space-3));
-}
-
-.selector-bracket-right {
-  inset-inline-end: calc(-1 * var(--space-3));
-}
-
-@keyframes bracket-track {
-  0% {
-    inset-block-start: 0;
-  }
-
-  100% {
-    inset-block-start: calc(100% - 1lh);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .selector-bracket {
-    animation: none;
-  }
-}
-
 .site-links li {
-  padding-block: var(--space-1);
+  padding-block: 0.15rem;
 }
 
 .site-links li:first-child {
@@ -162,6 +152,7 @@ a {
   display: inline-block;
   max-inline-size: 100%;
   color: var(--link);
+  font-size: 0.9em;
   text-decoration: none;
   overflow-wrap: anywhere;
   cursor: pointer;
