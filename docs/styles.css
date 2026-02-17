@@ -2,10 +2,17 @@
   --bg: #fff;
   --text: #000;
   --link: #777;
+  --title-measure: 96ch;
   --space-1: clamp(0.3rem, 0.25rem + 0.2vw, 0.5rem);
   --space-2: clamp(0.75rem, 0.5rem + 1vw, 1.5rem);
   --space-3: clamp(1rem, 0.75rem + 2vw, 2.5rem);
   --font-size: clamp(1rem, 0.95rem + 0.35vw, 1.2rem);
+}
+
+html,
+body {
+  overflow-x: clip;
+  overflow-y: auto;
 }
 
 body {
@@ -13,7 +20,7 @@ body {
   min-height: 100dvh;
   display: grid;
   place-items: start;
-  padding: max(env(safe-area-inset-top), var(--space-3))
+  padding: 0
     max(env(safe-area-inset-right), var(--space-1))
     max(env(safe-area-inset-bottom), var(--space-1))
     max(env(safe-area-inset-left), var(--space-1));
@@ -47,11 +54,23 @@ body {
   inline-size: 100%;
 }
 
+.intro-note {
+  margin: 0;
+  padding: 0.5rem 0.75rem 1.5rem 0;
+  color: rgba(0, 0, 0, 0.72);
+  max-inline-size: var(--title-measure);
+  font-size: 0.62em;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  text-align: justify;
+  text-wrap: pretty;
+}
+
 .page-title {
   margin: 0;
   margin-left: 0;
   padding-left: 0;
-  inline-size: fit-content;
+  inline-size: min(100%, var(--title-measure));
   font-size: clamp(1.2rem, 1rem + 1vw, 2rem);
   font-weight: 400;
   letter-spacing: 0.04em;
@@ -88,11 +107,21 @@ body {
 }
 
 @media (max-width: 900px) {
+  body {
+    place-items: center;
+    padding: max(env(safe-area-inset-top), var(--space-2))
+      max(env(safe-area-inset-right), var(--space-2))
+      max(env(safe-area-inset-bottom), var(--space-2))
+      max(env(safe-area-inset-left), var(--space-2));
+  }
+
   .layout {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: start;
     gap: var(--space-2);
+    inline-size: min(100%, 32rem);
+    margin-inline: auto;
     left: 0;
     top: 0;
     transform: none;
@@ -135,7 +164,7 @@ body {
   flex: 1 1 auto;
   min-inline-size: 0;
   color: var(--link);
-  font-size: 0.8em;
+  font-size: 0.75em;
   line-height: 1.25;
   text-align: left;
   -webkit-user-select: none;
