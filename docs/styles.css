@@ -59,7 +59,7 @@ body {
   padding: 0.5rem 0.75rem 1.5rem 0;
   color: rgba(0, 0, 0, 0.72);
   max-inline-size: var(--title-measure);
-  font-size: 0.62em;
+  font-size: 0.75em;
   line-height: 1.5;
   letter-spacing: 0.01em;
   text-align: justify;
@@ -82,13 +82,18 @@ body {
   position: fixed;
   inset-inline-start: max(env(safe-area-inset-left), var(--space-2));
   inset-block-start: max(env(safe-area-inset-top), var(--space-2));
-  z-index: 0;
-  pointer-events: none;
+  z-index: 3;
+  pointer-events: auto;
+}
+
+.brand-link {
+  display: block;
+  line-height: 0;
 }
 
 .logo {
-  inline-size: clamp(90px, 15.75vw, 180px);
-  block-size: clamp(90px, 15.75vw, 180px);
+  inline-size: clamp(45px, 7.875vw, 90px);
+  block-size: clamp(45px, 7.875vw, 90px);
   display: block;
   object-fit: contain;
 }
@@ -138,14 +143,14 @@ body {
   }
 
   .brand {
-    z-index: 0;
-    opacity: 0.35;
-    pointer-events: none;
+    z-index: 3;
+    opacity: 0.8;
+    pointer-events: auto;
   }
 
   .logo {
-    inline-size: clamp(54px, 12.375vw, 90px);
-    block-size: clamp(54px, 12.375vw, 90px);
+    inline-size: clamp(27px, 6.1875vw, 45px);
+    block-size: clamp(27px, 6.1875vw, 45px);
   }
 
 }
