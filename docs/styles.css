@@ -50,7 +50,7 @@ body {
 .identity {
   display: grid;
   justify-items: start;
-  gap: 0.25rem;
+  gap: 0.5rem;
   inline-size: 100%;
 }
 
@@ -178,7 +178,7 @@ body {
 }
 
 .site-links li {
-  padding-block: 0.15rem;
+  padding-block: 0.15rem 0.3rem;
 }
 
 .site-links li:first-child {
