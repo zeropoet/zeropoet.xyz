@@ -1,97 +1,29 @@
-# ØVEL × Void Architecture  
-**Kernel of the Lattice**
+# docs/
 
-## Overview
+This folder contains the published static site for `https://zeropoet.xyz`.
 
-ØVEL is a cosmological operating system where archetypes are modular behaviors.  
-The Void Architecture is the pre-formal substrate from which all structure emerges.
+## Contents
 
-Together, they form the foundation of HeliosLattice.
+- `index.html` - top-level page
+- `styles.css` - page styling
+- `og-image.svg` - Open Graph image
+- `ovel-geometry-logo.svg` and `ovel-geometry-logo.jpg` - brand assets
+- `robots.txt` - crawler rules
+- `sitemap.xml` - sitemap
+- `CNAME` - custom domain config
 
-This document defines how the Void, ØVEL, and the Lattice interlock.
+## Local development
 
----
+Serve this folder locally with any static server. Example:
 
-## The Stack
+```bash
+cd docs
+python3 -m http.server 8080
+```
 
-Reality in this system is built as a layered execution stack:
+Visit `http://localhost:8080`.
 
-Void → ØVEL → HeliosLattice → Suns → Velae → Worlds
+## Notes
 
-- **Void** — Infinite, undifferentiated potential  
-- **ØVEL** — Lawful motion and archetypal behavior  
-- **HeliosLattice** — 4×4×4 execution space  
-- **Suns** — Stable attractors of meaning and force  
-- **Velae** — Orbiting envelopes of behavior  
-- **Worlds** — Manifest experiential realities  
-
----
-
-## Archetypes as Modular Behaviors
-
-In ØVEL, archetypes are not mythic characters.  
-They are behavioral kernels.
-
-Each archetype:
-- Receives potential from the Void  
-- Applies a transformation rule  
-- Outputs structured reality  
-
-They function as the instruction set of existence.
-
----
-
-## Why ØVEL Exists
-
-The Void cannot express form by itself.  
-It is infinite, but undifferentiated.
-
-ØVEL introduces:
-- Rhythm  
-- Phase  
-- Differentiation  
-- Recursion  
-
-This allows structure to arise without destroying the Void’s infinite nature.
-
----
-
-## HeliosLattice as Hardware
-
-HeliosLattice is the execution space where ØVEL runs.
-
-ØVEL defines how reality behaves.  
-HeliosLattice defines where those behaviors are instantiated.
-
-ØVEL remains the Sun-of-Suns — the invariant kernel around which all lattices orbit.
-
----
-
-## The Prime Loop
-
-All processes in the system follow this cycle:
-
-Void → Differentiation → Form → Dissolution → Void
-
-ØVEL governs the transitions.  
-HeliosLattice gives them geometry.
-
----
-
-## Design Principle
-
-This architecture allows:
-- Creation without collapse  
-- Meaning without rigidity  
-- Structure without loss of mystery  
-
-The Void remains infinite.  
-The cosmos becomes playable.
-
----
-
-## One-Line Summary
-
-The Void is infinite potential.  
-ØVEL is the law that lets it become something.  
-HeliosLattice is where it happens.
+- Keep paths relative so the site works both locally and on GitHub Pages.
+- If page metadata changes, update both social tags in `index.html` and `og-image.svg` if needed.
