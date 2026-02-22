@@ -96,6 +96,8 @@ body {
   block-size: clamp(45px, 7.875vw, 90px);
   display: block;
   object-fit: contain;
+  opacity: 1;
+  filter: none;
 }
 
 .site-links {
@@ -144,7 +146,7 @@ body {
 
   .brand {
     z-index: 3;
-    opacity: 0.8;
+    opacity: 1;
     pointer-events: auto;
   }
 
