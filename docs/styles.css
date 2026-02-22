@@ -52,6 +52,7 @@ body {
   justify-items: start;
   gap: 0.5rem;
   inline-size: 100%;
+  padding-top: var(--space-3);
 }
 
 .intro-note {
@@ -92,8 +93,8 @@ body {
 }
 
 .logo {
-  inline-size: clamp(45px, 7.875vw, 90px);
-  block-size: clamp(45px, 7.875vw, 90px);
+  inline-size: clamp(54px, 9.45vw, 108px);
+  block-size: clamp(54px, 9.45vw, 108px);
   display: block;
   object-fit: contain;
   opacity: 1;
@@ -137,6 +138,7 @@ body {
   .identity {
     gap: var(--space-1);
     inline-size: 100%;
+    padding-top: var(--space-2);
   }
 
   .page-title,
@@ -151,8 +153,8 @@ body {
   }
 
   .logo {
-    inline-size: clamp(27px, 6.1875vw, 45px);
-    block-size: clamp(27px, 6.1875vw, 45px);
+    inline-size: clamp(32px, 7.425vw, 54px);
+    block-size: clamp(32px, 7.425vw, 54px);
   }
 
 }
