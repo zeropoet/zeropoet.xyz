@@ -2,11 +2,13 @@
   --bg: #fff;
   --text: #000;
   --link: #777;
-  --title-measure: 96ch;
+  --title-measure: 72ch;
   --space-1: clamp(0.3rem, 0.25rem + 0.2vw, 0.5rem);
   --space-2: clamp(0.75rem, 0.5rem + 1vw, 1.5rem);
   --space-3: clamp(1rem, 0.75rem + 2vw, 2.5rem);
   --font-size: clamp(1rem, 0.95rem + 0.35vw, 1.2rem);
+  --flow-space: clamp(0.5rem, 0.4rem + 0.5vw, 0.9rem);
+  --body-copy-size: 0.75em;
 }
 
 html,
@@ -19,7 +21,7 @@ body {
   margin: 0;
   min-height: 100dvh;
   display: grid;
-  place-items: start;
+  place-items: center;
   padding: 0
     max(env(safe-area-inset-right), var(--space-1))
     max(env(safe-area-inset-bottom), var(--space-1))
@@ -32,38 +34,37 @@ body {
 }
 
 .layout {
-  position: relative;
-  z-index: 1;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(14rem, 18rem) minmax(0, 1fr);
+  grid-template-areas:
+    "brand identity"
+    "links intro";
   justify-items: start;
   align-items: flex-start;
-  gap: var(--space-1);
-  inline-size: 100%;
-  block-size: auto;
+  gap: var(--flow-space);
+  inline-size: min(100%, var(--title-measure));
   margin: 0;
-  left: 100px;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .identity {
+  grid-area: identity;
   display: grid;
   justify-items: start;
-  gap: 0.5rem;
+  gap: var(--flow-space);
   inline-size: 100%;
-  padding-top: var(--space-3);
+  padding-top: 0;
 }
 
 .intro-note {
+  grid-area: intro;
   margin: 0;
-  padding: 0.5rem 0.75rem 1.5rem 0;
+  padding: 0;
   color: rgba(0, 0, 0, 0.72);
   max-inline-size: var(--title-measure);
-  font-size: 0.75em;
+  font-size: var(--body-copy-size);
   line-height: 1.5;
   letter-spacing: 0.01em;
-  text-align: justify;
+  text-align: left;
   text-wrap: pretty;
 }
 
@@ -74,27 +75,25 @@ body {
   inline-size: min(100%, var(--title-measure));
   font-size: clamp(1.2rem, 1rem + 1vw, 2rem);
   font-weight: 400;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
   text-align: left;
   color: var(--text);
 }
 
 .brand {
-  position: fixed;
-  inset-inline-start: max(env(safe-area-inset-left), var(--space-2));
-  inset-block-start: max(env(safe-area-inset-top), var(--space-2));
-  z-index: 3;
-  pointer-events: auto;
+  grid-area: brand;
+  align-self: start;
+  justify-self: start;
 }
 
 .brand-link {
-  display: block;
+  display: inline-block;
   line-height: 0;
 }
 
 .logo {
-  inline-size: clamp(54px, 9.45vw, 108px);
-  block-size: clamp(54px, 9.45vw, 108px);
+  inline-size: clamp(48px, 6vw, 72px);
+  block-size: clamp(48px, 6vw, 72px);
   display: block;
   object-fit: contain;
   opacity: 1;
@@ -102,16 +101,10 @@ body {
 }
 
 .site-links {
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--space-1);
+  grid-area: links;
+  display: block;
   inline-size: 100%;
-  margin-left: 0;
-  padding-left: 0;
-  margin-top: var(--space-2);
-  text-align: left;
+  margin-top: 0;
 }
 
 @media (max-width: 900px) {
@@ -126,17 +119,19 @@ body {
   .layout {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-areas:
+      "brand"
+      "identity"
+      "intro"
+      "links";
     justify-items: start;
-    gap: var(--space-2);
+    gap: var(--flow-space);
     inline-size: min(100%, 32rem);
     margin-inline: auto;
-    left: 0;
-    top: 0;
-    transform: none;
   }
 
   .identity {
-    gap: var(--space-1);
+    gap: var(--flow-space);
     inline-size: 100%;
     padding-top: var(--space-2);
   }
@@ -147,14 +142,13 @@ body {
   }
 
   .brand {
-    z-index: 3;
-    opacity: 1;
-    pointer-events: auto;
+    align-self: start;
+    justify-self: start;
   }
 
   .logo {
-    inline-size: clamp(32px, 7.425vw, 54px);
-    block-size: clamp(32px, 7.425vw, 54px);
+    inline-size: clamp(32px, 8vw, 48px);
+    block-size: clamp(32px, 8vw, 48px);
   }
 
 }
@@ -163,6 +157,8 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: grid;
+  gap: var(--flow-space);
   text-align: left;
 }
 
@@ -174,36 +170,33 @@ body {
   min-inline-size: 0;
   color: var(--link);
   font-size: 0.75em;
-  line-height: 1.25;
+  line-height: 1.5;
   text-align: left;
   -webkit-user-select: none;
   user-select: none;
   pointer-events: none;
 }
 
-.site-links li {
-  padding-block: 0.15rem 0.3rem;
-}
-
-.site-links li:first-child {
-  padding-top: 0;
-}
-
 a {
   display: inline-block;
   max-inline-size: 100%;
   color: var(--link);
-  font-size: 0.9em;
+  font-size: var(--body-copy-size);
+  line-height: 1.5;
+  letter-spacing: 0.01em;
   text-decoration: none;
+  border-bottom: 1px solid transparent;
   overflow-wrap: anywhere;
   cursor: pointer;
   -webkit-user-select: none;
   user-select: none;
+  transition: color 140ms ease, border-color 140ms ease;
 }
 
 a:hover,
 a:focus-visible {
   color: var(--text);
+  border-color: currentColor;
 }
 
 a:focus-visible {
