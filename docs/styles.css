@@ -73,6 +73,7 @@ body {
   margin-left: 0;
   padding-left: 0;
   inline-size: min(100%, var(--title-measure));
+  font-family: Palatino, "Palatino Linotype", "Book Antiqua", serif;
   font-size: clamp(1.2rem, 1rem + 1vw, 2rem);
   font-weight: 400;
   letter-spacing: 0.02em;
