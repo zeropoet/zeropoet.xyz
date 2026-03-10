@@ -15,7 +15,7 @@
 
 html,
 body {
-  overflow-x: clip;
+  overflow-x: auto;
   overflow-y: auto;
 }
 
@@ -36,11 +36,45 @@ body {
   font-size: var(--font-size);
   line-height: 1.45;
   isolation: isolate;
+  cursor: none;
+}
+
+.grid-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  pointer-events: none;
+}
+
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  inline-size: 12px;
+  block-size: 12px;
+  border-radius: 50%;
+  background: #111111;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate3d(-50%, -50%, 0) scale(1);
+  transition: opacity 120ms ease, transform 140ms ease;
+}
+
+.cursor-dot.is-hovering {
+  transform: translate3d(-50%, -50%, 0) scale(1.4);
+}
+
+.cursor-dot.is-pressed {
+  transform: translate3d(-50%, -50%, 0) scale(0.82);
 }
 
 .layout {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   display: block;
   inline-size: min(100%, var(--title-measure));
 }
@@ -49,9 +83,10 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 0;
+  z-index: 1;
   line-height: 0;
   pointer-events: none;
+  opacity: 0.88;
 }
 
 .logo {
@@ -240,5 +275,15 @@ a:focus-visible {
   .page-title {
     max-inline-size: 10ch;
     font-size: clamp(2.3rem, 1.9rem + 3vw, 4.2rem);
+  }
+}
+
+@media (hover: none), (pointer: coarse) {
+  body {
+    cursor: auto;
+  }
+
+  .cursor-dot {
+    display: none;
   }
 }
