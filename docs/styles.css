@@ -1,5 +1,5 @@
 :root {
-  --bg: #f8f7f3;
+  --bg: #ffffff;
   --line: rgba(0, 0, 0, 0.12);
   --text: #111111;
   --muted: rgba(17, 17, 17, 0.64);
@@ -28,9 +28,7 @@ body {
     max(env(safe-area-inset-right), var(--space-2))
     max(env(safe-area-inset-bottom), var(--space-3))
     max(env(safe-area-inset-left), var(--space-2));
-  background:
-    radial-gradient(circle at top left, rgba(0, 0, 0, 0.035), transparent 34%),
-    linear-gradient(180deg, #fcfbf8 0%, var(--bg) 100%);
+  background: var(--bg);
   color: var(--text);
   font-family: "IBM Plex Mono", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
   font-size: var(--font-size);
