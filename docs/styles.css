@@ -5,6 +5,7 @@
   --muted: rgba(17, 17, 17, 0.64);
   --link: rgba(17, 17, 17, 0.72);
   --title-measure: 78rem;
+  --title-column: clamp(18rem, 24vw, 23rem);
   --space-1: clamp(0.5rem, 0.42rem + 0.3vw, 0.75rem);
   --space-2: clamp(1rem, 0.8rem + 0.8vw, 1.6rem);
   --space-3: clamp(1.5rem, 1.1rem + 1.5vw, 2.75rem);
@@ -86,7 +87,7 @@ body {
 .hero {
   display: grid;
   gap: calc(var(--space-1) * 1.25);
-  max-inline-size: 34rem;
+  max-inline-size: var(--title-column);
 }
 
 .section-label {
@@ -111,7 +112,7 @@ body {
 
 .content-grid {
   display: grid;
-  grid-template-columns: minmax(18rem, 34ch) minmax(14rem, 18rem);
+  grid-template-columns: minmax(0, var(--title-column)) minmax(14rem, 18rem);
   justify-content: space-between;
   gap: var(--space-3);
   align-items: start;
@@ -127,7 +128,7 @@ body {
 
 .intro-note {
   margin: 0;
-  max-inline-size: 34ch;
+  max-inline-size: none;
   color: rgba(17, 17, 17, 0.78);
   font-size: 0.78em;
   line-height: 1.6;
