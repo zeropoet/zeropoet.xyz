@@ -36,6 +36,16 @@
     return value - Math.floor(value);
   }
 
+  function smoothstep(value) {
+    const clamped = Math.max(0, Math.min(1, value));
+    return clamped * clamped * (3 - 2 * clamped);
+  }
+
+  function smootherstep(value) {
+    const clamped = Math.max(0, Math.min(1, value));
+    return clamped * clamped * clamped * (clamped * (clamped * 6 - 15) + 10);
+  }
+
   function viewport() {
     return {
       width: Math.max(1, window.innerWidth),
@@ -237,8 +247,10 @@
     const rawMoveY = pointer.y - pointer.prevY;
     const moveX = Math.max(-moveLimit, Math.min(moveLimit, rawMoveX));
     const moveY = Math.max(-moveLimit, Math.min(moveLimit, rawMoveY));
-    const pointerRadius = Math.min(state.width, state.height) * (pointer.engaged ? 0.26 : 0.18);
-    const plasticRadius = Math.min(state.width, state.height) * 0.22;
+    const cellSize = Math.min(state.spacingX, state.spacingY);
+    const massCoreRadius = cellSize * (pointer.engaged ? 2.8 : 2.2);
+    const massHaloRadius = cellSize * (pointer.engaged ? 5.8 : 4.6);
+    const plasticRadius = cellSize * 6.4;
     const ax = new Float32Array(nodes.length);
     const ay = new Float32Array(nodes.length);
     const previous = new Array(nodes.length);
@@ -275,13 +287,23 @@
         const dx = node.x - pointerWorldX;
         const dy = node.y - pointerWorldY;
         const distance = Math.hypot(dx, dy) || 1;
-        if (distance < pointerRadius) {
-          const influence = (1 - distance / pointerRadius) ** 2;
-          const dragForce = pointer.engaged ? 4.4 : 1.1;
-          ax[i] += moveX * dragForce * influence;
-          ay[i] += moveY * dragForce * influence;
-          ax[i] += (-dx / distance) * influence * (pointer.engaged ? 0.6 : 0.12);
-          ay[i] += (-dy / distance) * influence * (pointer.engaged ? 0.6 : 0.12);
+        if (distance < massHaloRadius) {
+          const haloPull = 1 - distance / massHaloRadius;
+          const corePull = 1 - distance / massCoreRadius;
+          const edgeTension = smootherstep(haloPull);
+          const wellDepth = smootherstep(corePull);
+          const blend = smoothstep(Math.min(1, distance / massHaloRadius));
+          const driftResistance = pointer.engaged ? 2.6 : 0.7;
+          const massPull = pointer.engaged ? 7.8 : 1.8;
+          const rampedTension = edgeTension * (0.35 + 0.65 * (1 - blend));
+          const rampedWell = wellDepth * (0.55 + 0.45 * wellDepth);
+
+          ax[i] -= moveX * driftResistance * rampedTension;
+          ay[i] -= moveY * driftResistance * rampedTension;
+          ax[i] += (-dx / distance) * (rampedTension * 0.7 + rampedWell * massPull);
+          ay[i] += (-dy / distance) * (rampedTension * 0.7 + rampedWell * massPull);
+          node.vx *= 1 - rampedWell * 0.24;
+          node.vy *= 1 - rampedWell * 0.24;
         }
       }
 
@@ -321,9 +343,13 @@
       const dy = node.y - pointerWorldY;
       const distance = Math.hypot(dx, dy);
       if (distance > plasticRadius) continue;
-      const influence = (1 - distance / plasticRadius) ** 2;
-      node.bx += (node.x - node.bx) * 0.035 * influence + moveX * 0.06 * influence;
-      node.by += (node.y - node.by) * 0.035 * influence + moveY * 0.06 * influence;
+      const influence = smootherstep(1 - distance / plasticRadius);
+      const coreInfluence = smootherstep(1 - distance / massCoreRadius);
+      const anchorPull = 0.04 + influence * 0.06;
+      const driftPull = 0.04 + influence * 0.08;
+      const coreSink = 0.025 + coreInfluence * 0.055;
+      node.bx += (node.x - node.bx) * anchorPull - moveX * driftPull * influence - dx * coreSink;
+      node.by += (node.y - node.by) * anchorPull - moveY * driftPull * influence - dy * coreSink;
     }
 
     pointer.prevX = pointer.x;
