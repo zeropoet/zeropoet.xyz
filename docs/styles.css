@@ -83,7 +83,7 @@ body {
 .site-links ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
-  gap: var(--link-gap) clamp(111.2rem, 4vw, 3.5rem);
+  gap: var(--link-gap) clamp(1.2rem, 4vw, 3.5rem);
   margin: 0;
   padding: 0;
   list-style: none;

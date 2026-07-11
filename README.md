@@ -1,27 +1,30 @@
-# zeropoet.xyz
+# [zeropoet.xyz](https://zeropoet.xyz)
 
-Static source for the `zeropoet.xyz` site.
+The static project index for Mancel Lindsey / Zeropoet. The site links to work
+across the Root Logos, Sovereign Standard, FoldKernel, and Node Clusters
+ecosystem.
 
-## What is in this repo
+## Repository structure
 
-- `docs/index.html` - main page markup
-- `docs/styles.css` - site styles
-- `docs/og-image.svg` - social preview image
-- `docs/ovel-geometry-logo.*` - site logo assets
-- `docs/CNAME` - custom domain for GitHub Pages
-- `docs/robots.txt` and `docs/sitemap.xml` - crawler metadata
+The site is intentionally dependency-free and published from `docs/`:
 
-## Local preview
+- `index.html` contains the page structure and metadata.
+- `styles.css` contains the responsive layout and typography.
+- `CNAME` configures the custom domain for GitHub Pages.
+- `robots.txt` and `sitemap.xml` provide crawler metadata.
 
-Run a simple static server from the `docs` directory:
+## Run locally
+
+Start a static server from the repository root:
 
 ```bash
-cd docs
-python3 -m http.server 8080
+python3 -m http.server 8080 --directory docs
 ```
 
-Then open `http://localhost:8080`.
+Then visit [http://localhost:8080](http://localhost:8080).
 
-## Deploy
+## Deployment
 
-This repository is set up for GitHub Pages using `docs/` as the publish folder and `zeropoet.xyz` as the custom domain.
+GitHub Pages deploys the `main` branch's `docs/` directory to the custom domain.
+Changes are live after they are merged or pushed to `main` and the Pages build
+finishes.
