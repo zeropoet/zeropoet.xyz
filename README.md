@@ -1,16 +1,25 @@
 # [zeropoet.xyz](https://zeropoet.xyz)
 
-The static project index for Mancel Lindsey / Zeropoet. The site links to work
-across the Root Logos, Sovereign Standard, FoldKernel, and NFT Nodes ecosystem.
+The personal project index for Mancel Lindsey / Zeropoet, presented under the
+title “Void Architect.” It connects the current FoldForge, FoldKernel, Root
+Logos, Sovereign Standard, and Telos projects from one minimal landing page.
+
+## Project links
+
+- [FoldForge](https://zeropoet.github.io/FoldForge)
+- [FoldKernel](https://github.com/zeropoet/foldkernel)
+- [Root Logos](https://rootlogos.com/)
+- [Sovereign Standard](https://sovereignstandard.co)
+- [Telos](https://github.com/zeropoet/Telos)
 
 ## Repository structure
 
 The site is intentionally dependency-free and published from `docs/`:
 
-- `index.html` contains the page structure and metadata.
-- `styles.css` contains the responsive layout and typography.
-- `CNAME` configures the custom domain for GitHub Pages.
-- `robots.txt` and `sitemap.xml` provide crawler metadata.
+- `docs/index.html` contains the page structure, project links, and metadata.
+- `docs/styles.css` contains the responsive layout and typography.
+- `docs/CNAME` configures the custom domain for GitHub Pages.
+- `docs/robots.txt` and `docs/sitemap.xml` provide crawler metadata.
 
 ## Run locally
 
@@ -20,7 +29,8 @@ Start a static server from the repository root:
 python3 -m http.server 8080 --directory docs
 ```
 
-Then visit [http://localhost:8080](http://localhost:8080).
+Then open [http://localhost:8080](http://localhost:8080). No install or build
+step is required.
 
 ## Deployment
 
