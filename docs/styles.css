@@ -68,7 +68,7 @@ body {
   margin: 0;
   max-inline-size: 12ch;
   font-family: var(--font-sans);
-  font-size: 10rem;
+  font-size: 8rem;
   font-weight: 700;
   line-height: 0.9;
   letter-spacing: 0;
@@ -77,13 +77,12 @@ body {
 
 .site-links {
   inline-size: 100%;
-  font-weight: 700;
 }
 
 .site-links ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
-  gap: var(--link-gap) clamp(1.2rem, 4vw, 3.5rem);
+  gap: var(--link-gap) clamp(4.5rem, 4vw, 3.5rem);
   margin: 0;
   padding: 0;
   list-style: none;
@@ -98,11 +97,11 @@ a {
   align-items: center;
   min-block-size: 2.75rem;
   max-inline-size: 100%;
-  padding-block: 0.2rem;
+  padding-block: 4.2rem;
   color: var(--text);
   font-family: var(--font-mono);
-  font-size: 1.78rem;
-  line-height: 1.35;
+  font-size: .85rem;
+  line-height: 1.25;
   letter-spacing: .06em;
   text-decoration: none;
   text-transform: uppercase;
