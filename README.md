@@ -1,8 +1,7 @@
 # [zeropoet.xyz](https://zeropoet.xyz)
 
 The static project index for Mancel Lindsey / Zeropoet. The site links to work
-across the Root Logos, Sovereign Standard, FoldKernel, and Node Clusters
-ecosystem.
+across the Root Logos, Sovereign Standard, FoldKernel, and NFT Nodes ecosystem.
 
 ## Repository structure
 
