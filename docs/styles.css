@@ -81,7 +81,7 @@ body {
 
 .site-links ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 4rem), 1fr));
   gap: var(--link-gap) clamp(4.5rem, 4vw, 3.5rem);
   margin: 0;
   padding: 0;
@@ -94,19 +94,19 @@ body {
 
 a {
   display: inline-flex;
-  align-items: center;
-  min-block-size: 2.75rem;
+  align-items: left;
+  min-block-size: 5rem;
   max-inline-size: 100%;
-  padding-block: 4.2rem;
+  padding-block: .5rem;
   color: var(--text);
   font-family: var(--font-mono);
-  font-size: .85rem;
+  font-size:.8rem;
   line-height: 1.25;
   letter-spacing: .06em;
   text-decoration: none;
   text-transform: uppercase;
   overflow-wrap: anywhere;
-  border-bottom: 1px solid transparent;
+  border-bottom: 10px solid transparent;
   transition: color 140ms ease, border-color 140ms ease;
 }
 
