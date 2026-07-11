@@ -95,18 +95,18 @@ body {
 a {
   display: inline-flex;
   align-items: left;
-  min-block-size: 5rem;
+  min-block-size: 1rem;
   max-inline-size: 100%;
   padding-block: .5rem;
   color: var(--text);
   font-family: var(--font-mono);
   font-size:.8rem;
-  line-height: 1.25;
+  line-height: 1;
   letter-spacing: .06em;
   text-decoration: none;
   text-transform: uppercase;
   overflow-wrap: anywhere;
-  border-bottom: 10px solid transparent;
+  border-bottom: 2px solid transparent;
   transition: color 140ms ease, border-color 140ms ease;
 }
 
