@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Telos Mark</title>
+  <desc id="desc">A geometric emblem representing bounded authority, a rooted axis, a governing standard, and an explicit aim.</desc>
+
+  <rect width="1200" height="1200" fill="#fff"/>
+
+  <!-- The mandate: a complete and inviolable boundary. -->
+  <circle cx="600" cy="600" r="360" fill="none" stroke="#111" stroke-width="12"/>
+
+  <!-- Logos: the intelligible axis from origin to aim. -->
+  <line x1="600" y1="780" x2="600" y2="420" stroke="#111" stroke-width="12" stroke-linecap="round"/>
+
+  <!-- Standard: the fixed measure through which action must pass. -->
+  <line x1="455" y1="600" x2="745" y2="600" stroke="#111" stroke-width="12" stroke-linecap="round"/>
+
+  <!-- Root: held, embodied, and prior to delegated authority. -->
+  <circle cx="600" cy="790" r="36" fill="#111"/>
+
+  <!-- Telos: an explicit aim, visible but never confused with possession. -->
+  <circle cx="600" cy="390" r="52" fill="#fff" stroke="#111" stroke-width="12"/>
+</svg>

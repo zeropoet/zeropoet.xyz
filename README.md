@@ -1,12 +1,11 @@
 # [zeropoet.xyz](https://zeropoet.xyz)
 
 The personal project index for Mancel Lindsey / Zeropoet, presented under the
-title “Void Architect.” It connects the current FoldForge, FoldKernel, Root
-Logos, Sovereign Standard, and Telos projects from one minimal landing page.
+title “Void Architect.” It connects the current FoldKernel, Root Logos,
+Sovereign Standard, and Telos projects from one minimal landing page.
 
 ## Project links
 
-- [FoldForge](https://zeropoet.github.io/FoldForge)
 - [FoldKernel](https://github.com/zeropoet/foldkernel)
 - [Root Logos](https://rootlogos.com/)
 - [Sovereign Standard](https://sovereignstandard.co)
