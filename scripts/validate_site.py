@@ -67,6 +67,9 @@ def main() -> int:
 
     required_files = {
         "apple-touch-icon.png",
+        "assets/marks/foldforge.svg",
+        "assets/marks/zeropoet.png",
+        "assets/marks/zeropoet.svg",
         "favicon-16.png",
         "favicon-32.png",
         "favicon.svg",
