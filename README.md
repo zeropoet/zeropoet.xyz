@@ -9,7 +9,7 @@ landing page.
 
 - [FoldForge](https://foldforge.xyz)
 - [FoldKernel](https://github.com/zeropoet/foldkernel)
-- [FoldPortrait](https://github.com/zeropoet/FoldPortrait)
+- [FoldPortrait](https://zeropoet.github.io/FoldPortrait)
 - [Root Logos](https://rootlogos.com/)
 - [Sovereign Standard](https://sovereignstandard.co)
 - Telos (private)
