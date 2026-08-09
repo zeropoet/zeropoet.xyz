@@ -74,6 +74,7 @@ def main() -> int:
         "favicon-16.png",
         "favicon-32.png",
         "favicon.svg",
+        "scripts/constitutional-sigil.js",
         "social-preview.jpg",
         "styles.css",
     }
