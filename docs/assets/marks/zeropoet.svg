@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Zeropoet mark</title>
+  <desc id="desc">A black open circle crossed by a rising diagonal on a white field.</desc>
+  <metadata>
+    Canonical 1024-unit asset derived from the Zeropoet favicon.
+    Source favicon: docs/favicon.svg.
+    Derived raster: docs/assets/marks/zeropoet.png.
+  </metadata>
+  <rect width="1024" height="1024" fill="#ffffff"/>
+  <circle cx="512" cy="512" r="317.44" fill="none" stroke="#111111" stroke-width="102.4"/>
+  <path d="M256 768 768 256" fill="none" stroke="#111111" stroke-width="102.4"/>
+</svg>
