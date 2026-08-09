@@ -21,21 +21,9 @@ The site is intentionally dependency-free and published from `docs/`:
 - `docs/index.html` contains the page structure, project links, and metadata.
 - `docs/styles.css` contains the responsive layout and typography.
 - `docs/assets/` contains project marks and self-hosted IBM Plex webfonts.
-- `docs/scripts/constitutional-sigil.js` renders the monochrome background
-  field from the canonical Constitutional Sigil seed-0 equation.
 - `docs/CNAME` configures the custom domain for GitHub Pages.
 - `docs/robots.txt` and `docs/sitemap.xml` provide crawler metadata.
 - `scripts/validate_site.py` checks links, assets, metadata, and project ordering.
-
-## Constitutional background
-
-The background is a static, deterministic rendering of the authoritative 2D
-seal from [Constitutional Sigil](https://github.com/zeropoet/constitutional-sigil)
-at source revision `d04de5fca5294e6d58714ed0e6048dad75a8d666`. It preserves the
-seed-0 energy function, rings, gradient field, mirrored spiral, invariant
-anchors, and bounded domain while translating the source renderer into a
-single monochrome browser frame. It does not animate, add new harmonics, or
-alter the project-index layer.
 
 ## Run locally
 

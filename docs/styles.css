@@ -48,8 +48,6 @@ html {
 }
 
 body {
-  position: relative;
-  isolation: isolate;
   margin: 0;
   min-block-size: 100dvh;
   padding:
@@ -65,35 +63,7 @@ body {
   line-height: 1.45;
 }
 
-.constitutional-field {
-  position: fixed;
-  z-index: 0;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-  pointer-events: none;
-}
-
-.constitutional-field::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.34), rgba(255, 255, 255, 0.08) 48%, rgba(255, 255, 255, 0.46)),
-    radial-gradient(circle at center, transparent 24%, rgba(255, 255, 255, 0.3) 76%);
-}
-
-.constitutional-field canvas {
-  display: block;
-  inline-size: min(116vmin, 72rem);
-  block-size: min(116vmin, 72rem);
-  opacity: 0.7;
-}
-
 .layout {
-  position: relative;
-  z-index: 1;
   display: grid;
   align-content: space-between;
   gap: var(--section-gap);
@@ -234,12 +204,6 @@ a:focus-visible {
     gap: 1.5rem;
   }
 
-  .constitutional-field canvas {
-    inline-size: 132vmin;
-    block-size: 132vmin;
-    opacity: 0.56;
-    transform: translateY(-5vh);
-  }
 }
 
 @media (max-width: 360px) {
