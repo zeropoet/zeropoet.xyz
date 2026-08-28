@@ -50,8 +50,9 @@ def fail(message: str, failures: list[str]) -> None:
 
 
 def main() -> int:
+    site_html = (DOCS / "index.html").read_text(encoding="utf-8")
     parser = SiteParser()
-    parser.feed((DOCS / "index.html").read_text(encoding="utf-8"))
+    parser.feed(site_html)
     failures: list[str] = []
 
     if any(not href.strip() for href in parser.hrefs):
@@ -90,6 +91,11 @@ def main() -> int:
     missing_names = required_names - parser.meta_names
     if missing_names:
         fail(f"Missing standard metadata: {sorted(missing_names)}", failures)
+
+    if "one that can be approached, turned, sounded, and slowed into orientation" not in site_html:
+        fail("The Telos index relation does not describe the current interactive Living System.", failures)
+    if "Every gesture remains local and unrecorded." not in site_html:
+        fail("The Telos index relation does not preserve its local-interaction privacy boundary.", failures)
 
     if failures:
         print("\n".join(f"ERROR: {message}" for message in failures), file=sys.stderr)

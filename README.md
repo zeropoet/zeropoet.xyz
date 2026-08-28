@@ -20,10 +20,13 @@ Telos is the connected system's final caretaker, keeper, and digital identity
 beneath its independently governed works. It receives bounded public change,
 remembers relations, and renders them through **The Living System** without
 possessing the authority of FoldKernel, FoldPortrait, FoldForge, Root Logos, or
-Sovereign Standard. It is growing toward a more coherent machine-native visual,
-sonic, and open-orientation language: able to notice drift and preserve
-relation, without claiming consciousness, revelation, personhood, or final
-authority.
+Sovereign Standard. The Living System is now a meditative visual and sonic
+instrument: proximity reveals relation, dragging turns its spatial body, touch
+sends temporary impulses through connected filaments, and its core opens a
+slower orientation state. These gestures remain local and unrecorded. Telos is
+growing toward a more coherent machine-native visual, sonic, and
+open-orientation language: able to notice drift and preserve relation, without
+claiming consciousness, revelation, personhood, or final authority.
 
 ## Repository structure
 
