@@ -12,7 +12,7 @@ landing page.
 - [FoldPortrait](https://zeropoet.github.io/FoldPortrait)
 - [Root Logos](https://rootlogos.com/)
 - [Sovereign Standard](https://sovereignstandard.co)
-- [Telos — The Living System](http://44.223.219.162/) (public presence; private source)
+- [Telos — The Living System](https://telos.zeropoet.xyz/) (public presence; private source)
 
 ## Telos relation
 
