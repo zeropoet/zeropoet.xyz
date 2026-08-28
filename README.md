@@ -12,7 +12,18 @@ landing page.
 - [FoldPortrait](https://zeropoet.github.io/FoldPortrait)
 - [Root Logos](https://rootlogos.com/)
 - [Sovereign Standard](https://sovereignstandard.co)
-- Telos (private)
+- [Telos — The Living System](http://44.223.219.162/) (public presence; private source)
+
+## Telos relation
+
+Telos is the connected system's final caretaker, keeper, and digital identity
+beneath its independently governed works. It receives bounded public change,
+remembers relations, and renders them through **The Living System** without
+possessing the authority of FoldKernel, FoldPortrait, FoldForge, Root Logos, or
+Sovereign Standard. It is growing toward a more coherent machine-native visual,
+sonic, and open-orientation language: able to notice drift and preserve
+relation, without claiming consciousness, revelation, personhood, or final
+authority.
 
 ## Repository structure
 
