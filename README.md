@@ -1,26 +1,30 @@
 # [zeropoet.xyz](https://zeropoet.xyz)
 
-The personal project index for Mancel Lindsey / Zeropoet, presented under the
-title “VOID ARCHITECT.” It connects the current FoldForge, FoldKernel,
-FoldPortrait, Root Logos, Sovereign Standard, and Telos projects from one minimal
-landing page.
+The artist and developer studio for Mancel Lindsey / Zeropoet, presented under
+the title “VOID ARCHITECT.” The Zeropoet identity has been carried throughout
+the work since its migration to `zeropoet.eth`. The studio connects FoldForge,
+FoldKernel, FoldPortrait, Root Logos, Sovereign Standard, and Telos without
+collapsing their separate authority boundaries.
 
 ## Project links
 
-- [FoldForge](https://foldforge.xyz)
-- [FoldKernel](https://github.com/zeropoet/foldkernel)
-- [FoldPortrait](https://zeropoet.github.io/FoldPortrait)
+- [FoldForge](https://foldforge.zeropoet.xyz)
+- [FoldKernel](https://foldkernel.zeropoet.xyz)
+- [FoldPortrait](https://foldportrait.zeropoet.xyz)
 - [Root Logos](https://rootlogos.com/)
 - [Sovereign Standard](https://sovereignstandard.co)
 - [Telos — The Living System](https://telos.zeropoet.xyz/) (public presence; private source)
 
 ## Telos relation
 
-Telos is the connected system's final caretaker, keeper, and digital identity
+Telos is the connected system's final caretaker, keeper, cross-system
+interpreter, and digital identity
 beneath its independently governed works. It receives bounded public change,
 remembers relations, and renders them through **The Living System** without
 possessing the authority of FoldKernel, FoldPortrait, FoldForge, Root Logos, or
-Sovereign Standard. The Living System is now a meditative visual and sonic
+Sovereign Standard. It traverses bounded multi-repository declarations and
+gives Root Logos a compact, witnessed synthesis to question and transform. The
+Living System is now a meditative visual and sonic
 instrument: proximity reveals relation, dragging turns its spatial body, touch
 sends temporary impulses through connected filaments, and its core opens a
 slower orientation state. These gestures remain local and unrecorded. Telos is
