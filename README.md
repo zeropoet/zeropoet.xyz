@@ -3,7 +3,7 @@
 The artist and developer studio for Mancel Lindsey / Zeropoet, presented under
 the title “VOID ARCHITECT.” The Zeropoet identity has been carried throughout
 the work since its migration to `zeropoet.eth`. The studio connects FoldForge,
-FoldKernel, FoldPortrait, Root Logos, Sovereign Standard, and Telos without
+FoldKernel, FoldPortrait, Root Logos, Sovereign Standard, Telos, and The Record without
 collapsing their separate authority boundaries.
 
 ## Project links
@@ -14,6 +14,7 @@ collapsing their separate authority boundaries.
 - [Root Logos](https://rootlogos.com/)
 - [Sovereign Standard](https://sovereignstandard.co)
 - [Telos — The Living System](https://telos.zeropoet.xyz/) (public presence; private source)
+- [The Record](https://record.zeropoet.xyz/) — distributed sound archive and compositional field
 
 ## Telos relation
 
