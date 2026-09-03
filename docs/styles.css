@@ -136,6 +136,10 @@ body {
   object-fit: contain;
 }
 
+.site-links .the-record-mark {
+  transform: rotate(-90deg);
+}
+
 .project-card {
   cursor: default;
 }
