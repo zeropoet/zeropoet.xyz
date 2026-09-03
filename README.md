@@ -1,7 +1,7 @@
 # [zeropoet.xyz](https://zeropoet.xyz)
 
-The artist and developer studio for Mancel Lindsey / Zeropoet, presented under
-the title “VOID ARCHITECT.” The Zeropoet identity has been carried throughout
+The artist and developer studio for **Mancel Lindsey / Zeropoet / Void Architect**.
+The Zeropoet identity has been carried throughout
 the work since its migration to `zeropoet.eth`. The studio connects FoldForge,
 FoldKernel, FoldPortrait, Root Logos, Sovereign Standard, Telos, and The Record without
 collapsing their separate authority boundaries.

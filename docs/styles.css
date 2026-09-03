@@ -74,7 +74,6 @@ body {
 
 .hero {
   display: grid;
-  gap: clamp(0.9rem, 2vw, 1.4rem);
   max-inline-size: 48rem;
 }
 
@@ -86,17 +85,6 @@ body {
   line-height: 1.45;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-}
-
-.page-title {
-  margin: 0;
-  max-inline-size: 12ch;
-  font-family: var(--font-sans);
-  font-size: 9rem;
-  font-weight: 700;
-  line-height: 0.9;
-  letter-spacing: 0;
-  text-wrap: balance;
 }
 
 .site-links {
