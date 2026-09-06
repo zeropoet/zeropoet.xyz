@@ -1,5 +1,9 @@
 # [zeropoet.xyz](https://zeropoet.xyz)
 
+## Place in the studio architecture
+
+The repositories are independently governed modules, projects, instruments, and archives. `zeropoet.xyz` is the studio index: it names the body of work and makes relations among its parts visible without becoming their source authority. [`rootlogos.com`](https://rootlogos.com/) is the public surface of synthesis and build: it receives bounded elements from the studio and makes their demonstrated relations inhabitable without collapsing their origins. This separation fulfills the system's working law—preserve authority at the source, reveal relation at studio scale, and permit synthesis without possession—as Root Logos enters its Weave era.
+
 The artist and developer studio for **Mancel Lindsey / Zeropoet / Void Architect**.
 The Zeropoet identity has been carried throughout
 the work since its migration to `zeropoet.eth`. The studio connects FoldForge,

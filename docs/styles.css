@@ -74,7 +74,23 @@ body {
 
 .hero {
   display: grid;
+  gap: 0.9rem;
   max-inline-size: 48rem;
+}
+
+.architecture-key {
+  max-inline-size: 42rem;
+  margin: 0;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: clamp(0.68rem, 1vw, 0.78rem);
+  line-height: 1.65;
+  letter-spacing: 0.04em;
+}
+
+.architecture-key a {
+  color: var(--text);
+  text-underline-offset: 0.22em;
 }
 
 .section-label {
