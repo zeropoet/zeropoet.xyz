@@ -164,9 +164,6 @@ body {
   inline-size: 100%;
 }
 
-.site-links .the-record-mark {
-  transform: rotate(-90deg);
-}
 
 .project-card {
   cursor: default;
