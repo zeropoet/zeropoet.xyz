@@ -152,7 +152,8 @@ body {
   object-fit: contain;
 }
 
-.site-links .root-logos-field {
+.site-links .root-logos-field,
+.site-links .sovereign-standard-field {
   display: grid;
   place-items: center;
   inline-size: clamp(3.5rem, 6vw, 5rem);
@@ -160,7 +161,8 @@ body {
   background: #000;
 }
 
-.site-links .root-logos-field img {
+.site-links .root-logos-field img,
+.site-links .sovereign-standard-field img {
   inline-size: 100%;
 }
 

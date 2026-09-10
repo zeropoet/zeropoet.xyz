@@ -72,6 +72,7 @@ def main() -> int:
         "assets/marks/foldportrait.svg",
         "assets/marks/ovel.svg",
         "assets/marks/presence.svg",
+        "assets/marks/sovereign-standard-white.svg",
         "assets/marks/the-record.svg",
         "assets/marks/zeropoet.png",
         "assets/marks/zeropoet.svg",
