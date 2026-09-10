@@ -1,8 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
   <title id="title">Ovel mark</title>
-  <desc id="desc">Two centered white rings on a transparent field.</desc>
+  <desc id="desc">Two centered black rings on a white field.</desc>
+  <rect width="1200" height="1200" fill="#fff"/>
   <g>
-    <circle cx="600" cy="600" r="220" fill="none" stroke="#fff" stroke-width="18"/>
-    <circle cx="600" cy="600" r="122" fill="none" stroke="#fff" stroke-width="14"/>
+    <circle cx="600" cy="600" r="220" fill="none" stroke="#000" stroke-width="18"/>
+    <circle cx="600" cy="600" r="122" fill="none" stroke="#000" stroke-width="14"/>
   </g>
 </svg>
