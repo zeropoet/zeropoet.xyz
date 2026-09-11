@@ -97,10 +97,12 @@ def main() -> int:
     if missing_names:
         fail(f"Missing standard metadata: {sorted(missing_names)}", failures)
 
-    if "one that can be approached, turned, sounded, and slowed into orientation" not in site_html:
-        fail("The Telos index relation does not describe the current interactive Living System.", failures)
-    if "Every gesture remains local and unrecorded." not in site_html:
-        fail("The Telos index relation does not preserve its local-interaction privacy boundary.", failures)
+    if "Telos</strong> is the keeper ledger of the connected system" not in site_html:
+        fail("The studio index does not describe Telos's current keeper role.", failures)
+    if "Root Logos</strong> reads fragments and encounters" not in site_html:
+        fail("The studio index does not describe Root Logos's current writing role.", failures)
+    if "Folio</strong> reads Root Logos through sound" not in site_html:
+        fail("The studio index does not preserve Folio's sound-field boundary.", failures)
 
     if failures:
         print("\n".join(f"ERROR: {message}" for message in failures), file=sys.stderr)

@@ -2,7 +2,7 @@
 
 ## Place in the studio architecture
 
-The repositories are independently governed modules, projects, instruments, and archives. `zeropoet.xyz` is the studio index: it names the body of work and makes relations among its parts visible without becoming their source authority. [`rootlogos.com`](https://rootlogos.com/) is the public surface of synthesis and build: it receives bounded elements from the studio and makes their demonstrated relations inhabitable without collapsing their origins. This separation fulfills the system's working law—preserve authority at the source, reveal relation at studio scale, and permit synthesis without possession—as Root Logos enters its Weave era.
+The repositories are independently governed modules, projects, instruments, and archives. `zeropoet.xyz` is the studio index: it names the body of work and makes relations among its parts visible without becoming their source authority. [`rootlogos.com`](https://rootlogos.com/) is the living publication: it reads, questions, and writes through weighted relation and memory. [`folio.rootlogos.com`](https://folio.rootlogos.com/) is its spatial sound field. [`sovereignstandard.co`](https://sovereignstandard.co/) is the studio's material public practice. This separation preserves authority at the source while allowing relation, synthesis, and recurrence to become publicly inhabitable.
 
 The artist and developer studio for **Zeropoet / Mancel Lindsey / Void Architect**.
 The Zeropoet identity has been carried throughout
@@ -15,7 +15,7 @@ collapsing their separate authority boundaries.
 - [FoldForge](https://foldforge.zeropoet.xyz)
 - [FoldKernel](https://foldkernel.zeropoet.xyz)
 - [FoldPortrait](https://foldportrait.zeropoet.xyz)
-- [Folio](https://folio.rootlogos.com/) — executable writing archive of Root Logos
+- [Folio](https://folio.rootlogos.com/) — spatial sound field of Root Logos writings
 - [Ovel](https://ovel.zeropoet.xyz/)
 - [Presence](https://presence.rootlogos.com/)
 - [Root Logos](https://rootlogos.com/)
