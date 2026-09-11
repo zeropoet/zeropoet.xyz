@@ -15,7 +15,7 @@ collapsing their separate authority boundaries.
 - [FoldForge](https://foldforge.zeropoet.xyz)
 - [FoldKernel](https://foldkernel.zeropoet.xyz)
 - [FoldPortrait](https://foldportrait.zeropoet.xyz)
-- [Folio](https://folio.zeropoet.xyz/) — executable writing archive of Root Logos
+- [Folio](https://folio.rootlogos.com/) — executable writing archive of Root Logos
 - [Ovel](https://ovel.zeropoet.xyz/)
 - [Presence](https://presence.rootlogos.com/)
 - [Root Logos](https://rootlogos.com/)
