@@ -70,6 +70,7 @@ def main() -> int:
         "apple-touch-icon.png",
         "assets/marks/foldforge.svg",
         "assets/marks/foldportrait.svg",
+        "assets/marks/folio.svg",
         "assets/marks/ovel.svg",
         "assets/marks/presence.svg",
         "assets/marks/sovereign-standard-white.svg",

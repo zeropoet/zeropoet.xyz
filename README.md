@@ -7,7 +7,7 @@ The repositories are independently governed modules, projects, instruments, and 
 The artist and developer studio for **Zeropoet / Mancel Lindsey / Void Architect**.
 The Zeropoet identity has been carried throughout
 the work since its migration to `zeropoet.eth`. The studio connects FoldForge,
-FoldKernel, FoldPortrait, Ovel, Presence, Root Logos, Sovereign Standard, Telos, and The Record without
+FoldKernel, FoldPortrait, Folio, Ovel, Presence, Root Logos, Sovereign Standard, Telos, and The Record without
 collapsing their separate authority boundaries.
 
 ## Project links
@@ -15,6 +15,7 @@ collapsing their separate authority boundaries.
 - [FoldForge](https://foldforge.zeropoet.xyz)
 - [FoldKernel](https://foldkernel.zeropoet.xyz)
 - [FoldPortrait](https://foldportrait.zeropoet.xyz)
+- [Folio](https://folio.zeropoet.xyz/) — executable writing archive of Root Logos
 - [Ovel](https://ovel.zeropoet.xyz/)
 - [Presence](https://presence.rootlogos.com/)
 - [Root Logos](https://rootlogos.com/)
